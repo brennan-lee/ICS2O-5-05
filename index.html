@@ -8,12 +8,12 @@
     <meta name="keywords" content="mths, ics2o" />
     <meta name="author" content="brennan-lee" />
     <meta name="theme-color" content="#FFFFFF" />
-    <title>GitHub page as PWA template</title>
+    <title>triangle</title>
     <link
       rel="canonical"
-      href="https://brennan-lee.github.io/ICS2O-PWA-Test/"
+      href="https://brennan-lee.github.io/ICS2O-5-05/"
     />
-    <link rel="manifest" href="/ICS2O-PWA-Test/manifest.webmanifest" />
+    <link rel="manifest" href="/ICS2O-5-05/manifest.webmanifest" />
     <link rel="stylesheet" href="./css/styles.css" />
     <!--- None blocking for Lighthouse report --->
     <!--- https://stackoverflow.com/questions/32759272/how-to-load-css-asynchronously --->
@@ -45,7 +45,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
   </head>
-  <title>My first PWA</title>
+  <title>triangle</title>
   <body>
     <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
     <script src="./js/script.js"></script>
@@ -64,16 +64,61 @@
           height="25%"
         />
         <p></p>
+        <form action="#">
+          Length A:
+          <div class="mdl-textfield mdl-js-textfield">
+            <input
+              class="mdl-textfield__input"
+              type="text"
+              pattern="-?[0-9]*(\.[0-9]+)?"
+              id="lengthA"
+              aria-label="Length A"
+            />
+            <span class="mdl-textfield__error">Input is not a number!</span>
+          </div>
+          cm
+        </form>
+        <!-- B Base | Numeric Textfield with text beside textbox -->
+        <form action="#">
+          Length B:
+          <div class="mdl-textfield mdl-js-textfield">
+            <input
+              class="mdl-textfield__input"
+              type="text"
+              pattern="-?[0-9]*(\.[0-9]+)?"
+              id="lengthB"
+              aria-label="Length B"
+            />
+            <span class="mdl-textfield__error">Input is not a number!</span>
+          </div>
+          cm
+        </form>
+        <!-- Height | Numeric Textfield with text beside textbox -->
+        <form action="#">
+          Length C:
+          <div class="mdl-textfield mdl-js-textfield">
+            <input
+              class="mdl-textfield__input"
+              type="text"
+              pattern="-?[0-9]*(\.[0-9]+)?"
+              id="lengthC"
+              aria-label="Length C"
+            />
+            <span class="mdl-textfield__error">Input is not a number!</span>
+          </div>
+          cm
+        </form>
         <!-- Raised button with ripple -->
         <button
           class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
-          onclick="myButtonClicked()"
+          onclick="Button()"
         >
           Say "Hello, World!"
         </button>
         <!-- basic text -->
         <p></p>
         <div id="hello-world"></div>
+        <div id="math"></div>
       </main>
     </div>
   </body>
