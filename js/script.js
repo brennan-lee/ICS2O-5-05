@@ -43,8 +43,7 @@ function button() {
     (180 / Math.PI)
 
   if (angleA == angleB && angleA == angleC) {
-    document.getElementById("math").innerHTML =
-      "it's a equalatiral triangle!"
+    document.getElementById("math").innerHTML = "it's a equalatiral triangle!"
   } else if (angleA != angleB && angleA != angleC && angleB != angleC) {
     document.getElementById("math").innerHTML = "it's a scalene triangle!"
   } else if (
